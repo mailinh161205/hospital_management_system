@@ -52,7 +52,17 @@ CREATE TABLE IF NOT EXISTS
 
 -- -- Dumping data for table doctor -- 
 INSERT INTO doctor (docid, docemail, docname, docpassword, docnic, doctel, specialties) 
-  VALUES (1, 'doctor@nyx.com', 'Test Doctor', '123', '001345048139', '0987654321', 1); 
+  VALUES (1, 'doctor@nyx.com', 'Test Doctor', '123', '001345048139', '0987654321', 1),
+('dr.john@nyx.com', 'Dr. John Peterson', '123', '001456789012', '0901112233', 5),     -- Cardiology
+('dr.sophia@nyx.com', 'Dr. Sophia Nguyen', '123', '001567890123', '0902223344', 13), -- Dermatology
+('dr.michael@nyx.com', 'Dr. Michael Tran', '123', '001678901234', '0903334455', 32), -- Obstetrics & Gynecology
+('dr.emma@nyx.com', 'Dr. Emma Le', '123', '001789012345', '0904445566', 16),         -- Gastroenterology
+('dr.david@nyx.com', 'Dr. David Pham', '123', '001890123456', '0905556677', 29),     -- Neurology
+('dr.linda@nyx.com', 'Dr. Linda Vo', '123', '001901234567', '0906667788', 45),       -- Psychiatry
+('dr.james@nyx.com', 'Dr. James Ho', '123', '001012345678', '0907778899', 38),       -- Paediatrics
+('dr.oliver@nyx.com', 'Dr. Oliver Bui', '123', '001123456789', '0908889900', 19),    -- General Surgery
+('dr.chloe@nyx.com', 'Dr. Chloe Dang', '123', '001234567890', '0909990011', 34),     -- Ophthalmology
+('dr.noah@nyx.com', 'Dr. Noah Truong', '123', '001345678901', '0910001122', 27);     -- Nephrology
 
 -- -------------------------------------------------------- -- 
 
@@ -179,7 +189,17 @@ INSERT INTO webuser (email, usertype)
   VALUES ('admin@nyx.com', 'a'), 
   ('doctor@nyx.com', 'd'), 
   ('patient@nyx.com', 'p'), 
-  ('mailinh161205@gmail.com', 'p'); 
+  ('mailinh161205@gmail.com', 'p'),
+  ('dr.john@nyx.com', 'd'),
+('dr.sophia@nyx.com', 'd'),
+('dr.michael@nyx.com', 'd'),
+('dr.emma@nyx.com', 'd'),
+('dr.david@nyx.com', 'd'),
+('dr.linda@nyx.com', 'd'),
+('dr.james@nyx.com', 'd'),
+('dr.oliver@nyx.com', 'd'),
+('dr.chloe@nyx.com', 'd'),
+('dr.noah@nyx.com', 'd');
 COMMIT; 
 
 
